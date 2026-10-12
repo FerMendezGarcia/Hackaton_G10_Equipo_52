@@ -1,0 +1,69 @@
+/* ============================================================
+   TOKENS DE DISEÑO — equivalen a las variables de Figma
+   ("Krystal – Maqueta UI" › 🎨 Sistema de diseño)
+   ============================================================ */
+:root {
+  /* Marca */
+  --indigo: #4f46e5;
+  --indigo-hover: #4338ca;
+  --azul: #2563eb;
+  --turquesa: #14b8a6;
+  --turquesa-texto: #0f8f82;
+  --lavanda: #eef0ff;
+  --lavanda-borde: #c7cbfa;
+  --turquesa-suave: #e6f7f5;
+  --degradado: linear-gradient(90deg, #4f46e5 0%, #2563eb 50%, #14b8a6 100%);
+
+  /* Texto */
+  --texto: #0f172a;
+  --texto-2: #64748b;
+  --texto-pendiente: #94a3b8;
+  --texto-inverso: #ffffff;
+
+  /* Superficies y bordes */
+  --fondo: #f7fbfd;
+  --tarjeta: #ffffff;
+  --sutil: #f1f5f9;
+  --borde: #e8eef5;
+  --borde-fuerte: #cbd5e1;
+  --error: #dc2626;
+  --error-suave: #fef2f2;
+
+  /* Espaciado y radios */
+  --esp-8: 8px;
+  --esp-12: 12px;
+  --esp-16: 16px;
+  --esp-24: 24px;
+  --esp-32: 32px;
+  --radio-md: 12px;
+  --radio-lg: 16px;
+  --radio-xl: 24px;
+
+  /* Sombras */
+  --sombra-tarjeta: 0 8px 24px rgba(15, 23, 42, 0.06);
+  --sombra-boton: 0 8px 20px rgba(79, 70, 229, 0.25);
+
+  /* Tipografía */
+  --fuente-titulos: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --fuente-texto: 'Inter', system-ui, sans-serif;
+
+  /* Anillo de foco accesible */
+  --foco: 0 0 0 2px var(--texto), 0 0 0 6px var(--turquesa);
+}
+
+/* Modo oscuro: se activa con el botón de sol del encabezado */
+[data-theme='oscuro'] {
+  --texto: #f1f5f9;
+  --texto-2: #a5b4c8;
+  --texto-pendiente: #64748b;
+  --fondo: #0b1120;
+  --tarjeta: #111a2e;
+  --sutil: #1a2540;
+  --borde: #22304d;
+  --borde-fuerte: #334366;
+  --lavanda: #1f2150;
+  --lavanda-borde: #3b3f8f;
+  --turquesa-suave: #0d2e2b;
+  --error-suave: #2a1214;
+  --sombra-tarjeta: 0 8px 24px rgba(0, 0, 0, 0.35);
+}

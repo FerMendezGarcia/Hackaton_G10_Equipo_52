@@ -1,0 +1,95 @@
+@import './tokens.css';
+@import './componentes.css';
+@import './pantallas.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--fuente-texto);
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--texto);
+  background: var(--fondo);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--fuente-titulos);
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+h1 {
+  font-size: clamp(28px, 3vw, 36px);
+  line-height: 1.22;
+  font-weight: 700;
+}
+h2 {
+  font-size: 24px;
+  line-height: 1.33;
+}
+h3 {
+  font-size: 18px;
+  line-height: 1.45;
+}
+p {
+  margin: 0;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+/* Foco visible para teclado en todos los controles */
+:focus-visible {
+  outline: none;
+  box-shadow: var(--foco);
+  border-radius: var(--radio-md);
+}
+
+/* Enlace "Saltar al contenido": solo aparece al enfocarlo */
+.saltar-contenido {
+  position: absolute;
+  left: 16px;
+  top: -60px;
+  z-index: 100;
+  background: var(--texto);
+  color: var(--fondo);
+  padding: 10px 16px;
+  border-radius: var(--radio-md);
+  font-weight: 600;
+  text-decoration: none;
+}
+.saltar-contenido:focus {
+  top: 12px;
+}
+
+/* Texto solo para lectores de pantalla */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* Respeta la preferencia de "reducir movimiento" */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
